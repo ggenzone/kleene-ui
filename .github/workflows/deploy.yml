@@ -22,7 +22,7 @@ jobs:
     - run: cd sites/my-site/ && yarn install
     - run: cd sites/my-site/ && yarn build
 
-    - run: touch docs/.nojekyll
+    - run: touch sites/my-site/dist/.nojekyll
     - name: Deploy docs 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
