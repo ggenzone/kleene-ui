@@ -1,6 +1,7 @@
 {
   "name": "my-site",
   "private": true,
+  "homepage": "https://ggenzone.github.io/kleene-ui",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
