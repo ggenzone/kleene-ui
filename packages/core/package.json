@@ -1,0 +1,66 @@
+{
+  "name": "kleene-ui-core",
+  "private": true,
+  "version": "0.0.1",
+  "homepage": "https://github.com/ggenzone/kleene-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggenzone/kleene-ui"
+  },
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "build": "run-p build:*",
+    "build:scripts": "vite build",
+    "build:types": "tsc --emitDeclarationOnly && tsc-alias",
+    "mcss": "yarn tcm src"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "json": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "ts-standard": "^12.0.2",
+    "tsc-alias": "^1.8.6",
+    "typed-css-modules": "^0.7.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "16.8.0 || >=17.x",
+    "react-dom": "16.8.0 || >=17.x",
+    "styled-components": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/kleene-ui-core.umd.js",
+  "module": "./dist/kleene-ui-core.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/kleene-ui-core.es.js",
+      "require": "./dist/kleene-ui-core.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  }
+}
