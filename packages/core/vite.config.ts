@@ -11,8 +11,8 @@ export default defineConfig({
     plugins: [
         react(),
         dts({
-            include: ['src/component/'],
-            insertTypesEntry: true
+            include: ['src/component/']
+            /*insertTypesEntry: true*/
         }),
     ],
     resolve: {

@@ -1,7 +1,7 @@
 {
   "name": "kleene-ui-core",
-  "private": true,
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.2",
   "homepage": "https://github.com/ggenzone/kleene-ui#readme",
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-dts": "^2.3.0"
-  },
+  },  
   "license": "MIT",
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",
@@ -52,14 +52,17 @@
     "styled-components": "^5.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "main": "./dist/kleene-ui-core.umd.js",
   "module": "./dist/kleene-ui-core.es.js",
   "exports": {
     ".": {
       "import": "./dist/kleene-ui-core.es.js",
-      "require": "./dist/kleene-ui-core.umd.js"
+      "require": "./dist/kleene-ui-core.umd.js",
+      "types": "./dist/components/index.d.ts"
     },
     "./dist/style.css": "./dist/style.css"
   }

@@ -1,0 +1,31 @@
+name: Deploy to Github pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_pages:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'yarn'
+
+    - run: cd packages/core/ && yarn install
+    - run: cd packages/core/ && yarn build
+ 
+    - run: cd sites/my-site/ && yarn install
+    - run: cd sites/my-site/ && yarn build
+
+    - run: touch docs/.nojekyll
+    - name: Deploy docs 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: ./sites/my-site/dist/ # The folder the action should deploy.
