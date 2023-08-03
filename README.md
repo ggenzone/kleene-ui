@@ -6,6 +6,24 @@
 UI Library for react / typescript
 
 
+## Components
+
+- [ ] Banners
+- [ ] Buttons
+- [ ] Navbars
+- [ ] Sidebars
+- [ ] Footers
+- [ ] Hero
+- [ ] Cards
+- [ ] Alerts
+- [ ] Tables
+- [ ] Steps
+- [ ] Tabs
+- [ ] Modals
+- [ ] Avatars
+- [ ] Context Menu
+
+
 [license]: https://badgen.net/github/license/ggenzone/kleene-ui?color=green
 [license-url]: https://github.com/ggenzone/kleene-ui/blob/master/LICENSE
 [build]: https://badgen.net/github/checks/ggenzone/kleene-ui?label=deploy
