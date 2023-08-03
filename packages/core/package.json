@@ -21,7 +21,8 @@
     "build": "run-p build:*",
     "build:scripts": "vite build",
     "build:types": "tsc --emitDeclarationOnly && tsc-alias",
-    "mcss": "yarn tcm src"
+    "mcss": "yarn tcm src",
+    "test": ""
   },
   "dependencies": {
     "react": "^18.2.0",
