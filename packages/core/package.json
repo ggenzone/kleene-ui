@@ -58,6 +58,7 @@
   ],
   "main": "./dist/kleene-ui-core.umd.js",
   "module": "./dist/kleene-ui-core.es.js",
+  "types": "./dist/components/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/kleene-ui-core.es.js",

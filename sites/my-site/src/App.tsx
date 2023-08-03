@@ -10,7 +10,7 @@ import {
     NavbarNav,
     NavbarItem,
     NavbarLink,
-    NavbarToggler,
+    NavbarToggler
   } from 'kleene-ui-core';
 
   import { useState } from 'react';
