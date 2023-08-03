@@ -7,11 +7,17 @@
     "type": "git",
     "url": "https://github.com/ggenzone/kleene-ui"
   },
+  "engines": {
+		"node": ">=16.6.0",
+		"npm": ">=7.19.0",
+		"git": ">=2.11.0",
+		"yarn": ">=1.7.0"
+	},
   "scripts": {
     "dev": "vite",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "aprepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
     "build": "run-p build:*",
     "build:scripts": "vite build",
     "build:types": "tsc --emitDeclarationOnly && tsc-alias",
