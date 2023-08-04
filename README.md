@@ -34,7 +34,7 @@ npm i kleene-ui-core
 
 [license]: https://badgen.net/github/license/ggenzone/kleene-ui?color=green
 [license-url]: https://github.com/ggenzone/kleene-ui/blob/master/LICENSE
-[build]: https://badgen.net/github/checks/ggenzone/kleene-ui?label=build
+[build]: https://github.com/ggenzone/kleene-ui/actions/workflows/deploy.yml/badge.svg?label=deploy
 [build-url]: https://github.com/ggenzone/kleene-ui/actions
 [npm]: https://badgen.net/github/tag/ggenzone/kleene-ui?label=version&color=green
 [npm-url]: https://www.npmjs.com/package/kleene-ui-core
