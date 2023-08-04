@@ -5,6 +5,14 @@
 
 UI Library for react / typescript
 
+## Install
+
+
+```bash
+npm i kleene-ui-core 
+```
+
+## Use
 
 ## Components
 
@@ -26,7 +34,7 @@ UI Library for react / typescript
 
 [license]: https://badgen.net/github/license/ggenzone/kleene-ui?color=green
 [license-url]: https://github.com/ggenzone/kleene-ui/blob/master/LICENSE
-[build]: https://badgen.net/github/checks/ggenzone/kleene-ui?label=deploy
+[build]: https://badgen.net/github/checks/ggenzone/kleene-ui?label=build
 [build-url]: https://github.com/ggenzone/kleene-ui/actions
 [npm]: https://badgen.net/github/tag/ggenzone/kleene-ui?label=version&color=green
 [npm-url]: https://www.npmjs.com/package/kleene-ui-core
