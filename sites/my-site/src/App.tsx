@@ -1,4 +1,4 @@
-import { Button, Sidenav, SidenavItem  } from 'kleene-ui-core';
+import { Button, Sidenav, SidenavItem, Layout } from 'kleene-ui-core';
 
 
 import { FC } from 'react';
@@ -385,8 +385,15 @@ const SizedButtons: FC = () => (
 
 function App() {    
     return (
-        <div className="App">
-            <NavbarVariantOne />
+
+      <Layout.Root className='bg-blue-900'>
+      <Layout.Container className='bg-red-900 p-0'>
+        <NavbarVariantTwo />
+        <Layout.Header className='bg-yellow-900 h-32'>
+          <p>Header</p>
+        </Layout.Header>
+        <Layout.Content className='bg-green-900 p-0'>
+        <NavbarVariantOne />
             <NavbarVariantTwo />
             <NavbarVariantThree />
             <SidenavLeft />
@@ -396,7 +403,12 @@ function App() {
             <DefaultButtons />
             <DisabledButtons />
             <OutlineButtons />
-        </div>
+        </Layout.Content>
+        <Layout.Footer className='bg-yellow-900'>
+          <p>Footer</p>
+        </Layout.Footer>
+      </Layout.Container>
+    </Layout.Root>
     );
 }
 
